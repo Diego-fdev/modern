@@ -25,5 +25,49 @@
     />
     <title>Modern Arquitectura</title>
   </head>
-  <body></body>
+  <body>
+    <header
+      class="w-full h-16 md:h-20 md:px-8 lg:px-12 xl:px-16 lg:h-24 bg-white px-4 flex items-center justify-between fixed gap-8 top-0 left-0"
+    >
+      <div class="logo w-24 h-fit md:w-32">
+        <img src="/images/logo-dark.png" alt="" />
+      </div>
+      <div class="mobile-menu flex items-center justify-center gap-8">
+        <div
+          class="iconos w-fit h-8 ml-auto flex items-center gap-8 justify-end"
+        >
+          <div class="contacto-header items-center gap-4 hidden lg:flex">
+            <div class="mail flex items-center gap-2">
+              <i class="fa fa-share-nodes text-xs"></i>
+
+              <span class="text-sm xl:text-base">info@gmail.com</span>
+            </div>
+            <div class="telefono flex items-center gap-2">
+              <i class="fa fa-share-nodes text-xs"></i>
+
+              <span class="text-sm xl:text-base">+549-214-234-111</span>
+            </div>
+          </div>
+          <div
+            class="listado-full-icons hidden sm:flex items-center justify-center gap-4"
+          >
+            <i class="fa fa-share-nodes text-xs"></i>
+            <i class="fa fa-share-nodes text-xs"></i>
+            <i class="fa fa-share-nodes text-xs"></i>
+            <i class="fa fa-share-nodes text-xs"></i>
+            <i class="fa fa-share-nodes text-xs"></i>
+            <i class="fa fa-share-nodes text-xs"></i>
+          </div>
+          <i class="fa fa-share-nodes sm:hidden"></i>
+          <i class="fa-solid fa-magnifying-glass text-xs"></i>
+        </div>
+        <div class="btn menu-mobile w-8 h-8 flex items-center justify-center">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <div class="hero w-full h-screen min-h-[700px] bg-black">
+      <div class="contenido-slider"></div>
+    </div>
+  </body>
 </html>
