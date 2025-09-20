@@ -54,3 +54,9 @@ body {
 .sub-experto::after {
   z-index: -2 !important;
 }
+
+/*ESTILOS CARD TESTIMONIO*/
+
+.contenido-testimonio {
+  box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.075);
+}
