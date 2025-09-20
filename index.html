@@ -27,7 +27,7 @@
   </head>
   <body>
     <header
-      class="w-full h-16 md:h-20 md:px-8 lg:px-12 xl:px-16 lg:h-24 bg-white px-4 flex items-center justify-between fixed gap-8 top-0 left-0"
+      class="w-full h-16 md:h-20 md:px-8 lg:px-12 xl:px-16 lg:h-24 bg-white px-4 flex items-center justify-between fixed gap-8 top-0 left-0 z-20"
     >
       <div class="logo w-24 h-fit md:w-32">
         <img src="/images/logo-dark.png" alt="" />
@@ -66,8 +66,42 @@
         </div>
       </div>
     </header>
-    <div class="hero w-full h-screen min-h-[700px] bg-black">
-      <div class="contenido-slider"></div>
+    <div
+      class="hero w-full h-screen min-h-[700px] bg-white lg:px-16 lg:pb-16 relative"
+    >
+      <div class="swiper-container w-full h-full">
+        <div class="swiper-wrapper w-full h-full">
+          <div class="swiper-slide relative w-full h-full">
+            <div
+              class="bg-slide-1 absolute top-0 left-0 w-full h-full bg-green-800 after:absolute after:inset-0 after:bg-black/20"
+            ></div>
+            <div
+              class="contenido-slider w-full h-full flex items-center justify-center flex-col px-4 md:px-8 lg:px-12 xl:px-16 text-white relative z-10 gap-4"
+            >
+              <span class="tag uppercase font-semibold text-sm sm:text-lg"
+                >general</span
+              >
+              <h1
+                class="titulo text-center flex flex-col items-center leading-[0px] max-w-[180px] mx-auto sm:max-w-full text-3xl sm:text-5xl lg:text-6xl"
+              >
+                <span class="capitalize font-bold tracking-tight leading-none"
+                  >construye tu casa</span
+                >
+                <span class="capitalize font-bold tracking-tight leading-none"
+                  >de manera virtual</span
+                >
+              </h1>
+              <span
+                class="subtitulo text-xs text-center max-w-[150px] sm:max-w-full sm:text-sm"
+                >Lorem ipsum, dolor sit consectetur adipisicing.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   </body>
 </html>
