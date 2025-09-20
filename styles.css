@@ -46,3 +46,11 @@ body {
 .roboto {
   font-family: "Roboto", sans-serif;
 }
+
+.sub-experto {
+  z-index: 22;
+}
+
+.sub-experto::after {
+  z-index: -2 !important;
+}
