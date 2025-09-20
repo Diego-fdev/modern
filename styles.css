@@ -42,3 +42,7 @@ body {
     background-image: url("/images/main-slider-bg/main-bg-03-desk.webp");
   }
 }
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
