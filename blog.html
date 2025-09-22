@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--TAILWIND-->
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!--CSS LOCALES-->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Modern Arquitectura - Blog</title>
+  </head>
+  <body>
+    <header
+      class="w-full h-16 md:h-20 md:px-8 lg:px-12 xl:px-16 lg:h-24 bg-white px-4 flex items-center justify-between fixed gap-8 top-0 left-0 z-20"
+    >
+      <div class="logo w-24 h-fit md:w-32">
+        <img src="/images/logo-dark.png" alt="" />
+      </div>
+      <div class="mobile-menu flex items-center justify-center gap-8">
+        <div
+          class="iconos w-fit h-8 ml-auto flex items-center gap-8 justify-end"
+        >
+          <div class="contacto-header items-center gap-4 hidden lg:flex">
+            <div class="mail flex items-center gap-2">
+              <i class="fa fa-share-nodes text-xs"></i>
+
+              <span class="text-sm xl:text-base">info@gmail.com</span>
+            </div>
+            <div class="telefono flex items-center gap-2">
+              <i class="fa fa-share-nodes text-xs"></i>
+
+              <span class="text-sm xl:text-base">+549-214-234-111</span>
+            </div>
+          </div>
+          <nav class="links hidden md:block">
+            <ul class="flex items-center gap-2">
+              <li class="px-2 py-1">
+                <span class="text-sm xl:text-base capitalize">inicio</span>
+              </li>
+              <li class="px-2 py-1">
+                <span class="text-sm xl:text-base capitalize">noticias</span>
+              </li>
+              <li class="px-2 py-1">
+                <span class="text-sm xl:text-base capitalize">trabajos</span>
+              </li>
+              <li class="px-2 py-1">
+                <span class="text-sm xl:text-base capitalize">blog</span>
+              </li>
+            </ul>
+          </nav>
+          <i class="fa fa-share-nodes"></i>
+          <i class="fa-solid fa-magnifying-glass text-xs"></i>
+        </div>
+        <div
+          class="btn menu-mobile w-8 h-8 flex items-center justify-center md:hidden"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <div
+      class="hero w-full h-[500px] lg:h-[600px] flex flex-col items-center gap-4 justify-center relative pt-16 md:pt-20 lg:pt-24 sm:items-start sm:px-4 md:px-8 lg:px-12 xl:px-16"
+    >
+      <div
+        class="imagen-hero w-full h-full absolute top-0 left-0 after:absolute after:inset-0 after:bg-black/70"
+      >
+        <img
+          src="/images/img-header-sec-desk.webp"
+          class="hidden lg:block"
+          alt=""
+        />
+        <img src="/images/img-header-sec-movil.webp" class="lg:hidden" alt="" />
+      </div>
+      <div
+        class="contenido-hero flex flex-col items-center justify-center relative z-[2] w-[250px] h-[320px] sm:w-full lg:max-w-[960px] xl:max-w-[1170px] mx-auto max-w-[540px] md:max-w-[720px] sm:items-start"
+      >
+        <div
+          class="deco w-[250px] h-[320px] !border-[12px] border-white !border-r-0 absolute after:absolute after:w-[12px] after:h-12 after:bg-white after:top-0 after:right-0 before:absolute before:w-[12px] before:h-12 before:bg-white before:bottom-0 before:right-0"
+        ></div>
+        <h2
+          class="text-white uppercase max-w-[250px] sm:max-w-full text-2xl lg:text-3xl px-8"
+        >
+          construcciones de alta calidad, efectivas e inspiradoras
+        </h2>
+      </div>
+      <footer
+        class="relative z-[2] w-[250px] sm:w-full max-w-[540px] lg:max-w-[960px] xl:max-w-[1170px] mx-auto md:max-w-[720px]"
+      >
+        <ul class="flex gap-2 items-center text-white">
+          <li class="capitalize text-xs lg:text-sm">inicio</li>
+          <li class="text-xs lg:text-sm">></li>
+          <li class="capitalize text-xs lg:text-sm">blog</li>
+        </ul>
+      </footer>
+    </div>
+    <section
+      class="px-4 lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-0 pt-20 pb-10 grid gap-12 max-w-[540px] md:max-w-[720px]"
+    >
+      <header class="flex flex-col gap-8 w-full">
+        <h2
+          class="uppercase font-semibold text-3xl sm:text-4xl md:!text-[40px]"
+        >
+          ultimos posts
+        </h2>
+      </header>
+      <div class="contenido-blog flex flex-col gap-12">
+        <div class="main-post flex flex-col gap-4">
+          <div class="imagen lg:h-[500px]">
+            <img
+              src="/images/pag-sec-blog/swiper-principal/img-pag-sec-blog-01.webp"
+              alt=""
+            />
+          </div>
+          <div
+            class="sub-images hidden lg:flex h-[150px] xl:h-[200px] w-full items-center justify-between gap-x-4"
+          >
+            <div class="imagen h-full">
+              <img
+                src="/images/pag-sec-blog/swiper-principal/img-pag-sec-blog-01.webp"
+                alt=""
+              />
+            </div>
+            <div class="imagen h-full">
+              <img
+                src="/images/pag-sec-blog/swiper-principal/img-pag-sec-blog-02.webp"
+                alt=""
+              />
+            </div>
+            <div class="imagen h-full">
+              <img
+                src="/images/pag-sec-blog/swiper-principal/img-pag-sec-blog-03.webp"
+                alt=""
+              />
+            </div>
+            <div class="imagen h-full">
+              <img
+                src="/images/pag-sec-blog/swiper-principal/img-pag-sec-blog-01.webp"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="info px-2 flex flex-col gap-2 lg:px-0">
+            <ul
+              class="tags flex items-center gap-2 text-[10px] flex-wrap uppercase font-semibold lg:text-xs"
+            >
+              <li><span>construccion</span></li>
+              <li><span>-</span></li>
+              <li><span>diseño</span></li>
+              <li><span>-</span></li>
+              <li><span>arquitectura</span></li>
+              <li><span>-</span></li>
+              <li><span>estructura</span></li>
+              <li><span>-</span></li>
+              <li><span>tecnologia</span></li>
+            </ul>
+            <h3
+              class="uppercase text-2xl md:text-3xl font-semibold lg:text-4xl"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </h3>
+            <ul class="tags flex gap-8 text-[10px] sm:text-xs uppercase">
+              <li
+                class="relative after:absolute after:top-[25%] after:-right-4 after:w-[2px] after:h-[50%] after:bg-black/30 after:-skew-12"
+              >
+                <span class="font-semibold">20 feb 2020</span>
+              </li>
+              <li
+                class="relative after:absolute after:top-[25%] after:-right-4 after:w-[2px] after:h-[50%] after:bg-black/30 after:-skew-12"
+              >
+                <span class="text-black/50 font-semibold">admin</span>
+              </li>
+              <li>
+                <span class="text-black/50 font-semibold">4 comentarios</span>
+              </li>
+            </ul>
+            <p
+              class="text-xs md:text-sm leading-[25px] lg:leading-[30px] lg:max-w-[700px] xl:max-w-[1000px]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea iure
+              velit, quis cumque atque perferendis, blanditiis accusamus
+              perspiciatis distinctio animi architecto delectus nulla quo libero
+              enim ipsam, ipsa adipisci voluptatibus. Eveniet nulla nam
+              consequuntur! Quas, obcaecati?
+            </p>
+            <p
+              class="text-xs md:text-sm leading-[25px] lg:leading-[30px] mt-4 lg:max-w-[700px] xl:max-w-[1000px]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea iure
+              velit, quis cumque atque perferendis, blanditiis accusamus
+              perspiciatis distinctio animi architecto delectus nulla quo libero
+              enim ipsam, ipsa adipisci voluptatibus. Eveniet nulla nam
+              consequuntur! Quas, obcaecati?
+            </p>
+            <button
+              class="btn-secondario w-fit border border-black py-2 px-4 min-w-[150px] flex justify-between items-center mt-4 self-end"
+            >
+              <span class="text-xs uppercase tracking-widest font-medium"
+                >ver post</span
+              >
+              <span class="deco">-</span>
+            </button>
+          </div>
+        </div>
+        <div class="comentarios flex flex-col gap-12">
+          <h3 class="uppercase font-semibold text-xl sm:text-2xl md:text-3xl">
+            comentarios
+          </h3>
+          <div
+            class="item-comentario md:max-w-[600px] lg:max-w-[800px] mx-auto pb-4 grid grid-cols-[60px_1fr] gap-2 relative after:absolute after:w-[80%] after:h-[1px] after:bg-black/30 after:bottom-0 after:left-[10%]"
+          >
+            <div class="imagen w-[60px] h-[60px]">
+              <img
+                src="/images/pag-sec-blog/comentarios/img-comentario-04.webp"
+                alt=""
+              />
+            </div>
+            <div class="info flex flex-col gap-2">
+              <span class="nombre uppercase font-semibold lg:text-lg"
+                >amelia</span
+              >
+              <span
+                class="data-comentario uppercase text-xs lg:text-sm font-semibold"
+                >20 sept 2025, 8:43 am</span
+              >
+              <p class="text-xs leading-[25px] lg:text-sm lg:leading-[30px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique id facilis nihil, quibusdam assumenda temporibus
+                inventore ad veritatis consectetur dolorem illo molestias natus
+                laborum autem accusantium illum quas exercitationem eos libero
+                beatae repellat ullam. Et, vel?
+              </p>
+            </div>
+          </div>
+          <div
+            class="item-comentario md:max-w-[600px] lg:max-w-[800px] mx-auto pb-4 grid grid-cols-[60px_1fr] gap-2 relative after:absolute after:w-[80%] after:h-[1px] after:bg-black/30 after:bottom-0 after:left-[10%]"
+          >
+            <div class="imagen w-[60px] h-[60px]">
+              <img
+                src="/images/pag-sec-blog/comentarios/img-comentario-02.webp"
+                alt=""
+              />
+            </div>
+            <div class="info flex flex-col gap-2">
+              <span class="nombre uppercase font-semibold lg:text-lg"
+                >amelia</span
+              >
+              <span
+                class="data-comentario uppercase text-xs lg:text-sm font-semibold"
+                >20 sept 2025, 8:43 am</span
+              >
+              <p class="text-xs leading-[25px] lg:text-sm lg:leading-[30px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique id facilis nihil, quibusdam assumenda temporibus
+                inventore ad veritatis consectetur dolorem illo molestias natus
+                laborum autem accusantium illum quas exercitationem eos libero
+                beatae repellat ullam. Et, vel?
+              </p>
+            </div>
+          </div>
+          <div
+            class="item-comentario md:max-w-[600px] lg:max-w-[800px] mx-auto pb-4 grid grid-cols-[60px_1fr] gap-2 relative after:absolute after:w-[80%] after:h-[1px] after:bg-black/30 after:bottom-0 after:left-[10%]"
+          >
+            <div class="imagen w-[60px] h-[60px]">
+              <img
+                src="/images/pag-sec-blog/comentarios/img-comentario-03.webp"
+                alt=""
+              />
+            </div>
+            <div class="info flex flex-col gap-2">
+              <span class="nombre uppercase font-semibold lg:text-lg"
+                >amelia</span
+              >
+              <span
+                class="data-comentario uppercase text-xs lg:text-sm font-semibold"
+                >20 sept 2025, 8:43 am</span
+              >
+              <p class="text-xs leading-[25px] lg:text-sm lg:leading-[30px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique id facilis nihil, quibusdam assumenda temporibus
+                inventore ad veritatis consectetur dolorem illo molestias natus
+                laborum autem accusantium illum quas exercitationem eos libero
+                beatae repellat ullam. Et, vel?
+              </p>
+            </div>
+          </div>
+          <div
+            class="item-comentario md:max-w-[600px] lg:max-w-[800px] mx-auto pb-4 grid grid-cols-[60px_1fr] gap-2 relative after:absolute after:w-[80%] after:h-[1px] after:bg-black/30 after:bottom-0 after:left-[10%]"
+          >
+            <div class="imagen w-[60px] h-[60px]">
+              <img
+                src="/images/pag-sec-blog/comentarios/img-comentario-01.webp"
+                alt=""
+              />
+            </div>
+            <div class="info flex flex-col gap-2">
+              <span class="nombre uppercase font-semibold lg:text-lg"
+                >amelia</span
+              >
+              <span
+                class="data-comentario uppercase text-xs lg:text-sm font-semibold"
+                >20 sept 2025, 8:43 am</span
+              >
+              <p class="text-xs leading-[25px] lg:text-sm lg:leading-[30px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique id facilis nihil, quibusdam assumenda temporibus
+                inventore ad veritatis consectetur dolorem illo molestias natus
+                laborum autem accusantium illum quas exercitationem eos libero
+                beatae repellat ullam. Et, vel?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="px-4 py-10 flex flex-col items-center lg:flex-row lg:justify-between lg:py-20 lg:px-16 xl:px-20 gap-2"
+    >
+      <div class="logo w-32 xl:w-40 h-fit">
+        <img src="/images/logo-dark.png" alt="" />
+      </div>
+      <div class="copy flex items-center">
+        <span class="text-xs xl:text-sm"
+          >&copy; Modern. Diseñado por Diego.</span
+        >
+      </div>
+      <ul class="filtros flex flex-wrap items-center justify-center gap-x-2">
+        <li
+          class="pr-2 py-1 relative after:absolute after:top-[25%] after:-right-1 after:w-[2px] after:h-[50%] after:bg-black/30 after:-skew-12"
+        >
+          <span class="capitalize text-xs xl:text-sm"
+            >terminos & condiciones</span
+          >
+        </li>
+        <li
+          class="px-2 py-1 relative after:absolute after:top-[25%] after:-right-1 after:w-[2px] after:h-[50%] after:bg-black/30 after:-skew-12"
+        >
+          <span class="capitalize text-xs xl:text-sm"
+            >politica de privacidad</span
+          >
+        </li>
+        <li class="px-2 py-1">
+          <span class="capitalize text-xs xl:text-sm">contactanos</span>
+        </li>
+      </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </body>
+</html>
