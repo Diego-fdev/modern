@@ -56,7 +56,28 @@ body {
 }
 
 /*ESTILOS CARD TESTIMONIO*/
-
 .contenido-testimonio {
   box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.075);
+}
+
+/*ESTILOS CARD NOTICIAS*/
+@media (min-width: 1024px) {
+  .item-noticia:nth-child(even) {
+    grid-template-columns: 450px 1fr;
+  }
+
+  .item-noticia:nth-child(even) .imagen {
+    grid-column-start: 2;
+  }
+
+  .item-noticia:nth-child(even) .info {
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .item-noticia:nth-child(even) {
+    grid-template-columns: 500px 1fr;
+  }
 }
