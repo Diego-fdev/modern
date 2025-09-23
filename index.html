@@ -67,7 +67,7 @@
       </div>
     </header>
     <div
-      class="hero w-full h-screen min-h-[700px] bg-white lg:px-16 lg:pb-16 relative"
+      class="hero w-full h-screen min-h-[700px] bg-white lg:px-16 lg:pb-16 relative overflow-hidden"
     >
       <div class="swiper-container w-full h-full">
         <div class="swiper-wrapper w-full h-full">
@@ -82,12 +82,14 @@
                 >general</span
               >
               <h1
-                class="titulo text-center flex flex-col items-center leading-[0px] max-w-[180px] mx-auto sm:max-w-full text-3xl sm:text-5xl lg:text-6xl"
+                class="titulo text-center flex flex-col items-center leading-[0px] max-w-[180px] w-full xl:max-w-full xl:flex-row xl:justify-center xl:gap-2 mx-auto sm:max-w-full text-3xl sm:text-4xl lg:text-5xl xl:text-6xl"
               >
-                <span class="capitalize font-bold tracking-tight leading-none"
+                <span
+                  class="capitalize font-semibold [text-shadow:0px_0px_20px_#000] tracking-tight leading-none"
                   >construye tu casa</span
                 >
-                <span class="capitalize font-bold tracking-tight leading-none"
+                <span
+                  class="capitalize font-semibold [text-shadow:0px_0px_20px_#000] tracking-tight leading-none"
                   >de manera virtual</span
                 >
               </h1>
@@ -97,7 +99,70 @@
               >
             </div>
           </div>
+          <div class="swiper-slide relative w-full h-full">
+            <div
+              class="bg-slide-2 absolute top-0 left-0 w-full h-full bg-green-800 after:absolute after:inset-0 after:bg-black/20"
+            ></div>
+            <div
+              class="contenido-slider w-full h-full flex items-center justify-center flex-col px-4 md:px-8 lg:px-12 xl:px-16 text-white relative z-10 gap-4"
+            >
+              <span class="tag uppercase font-semibold text-sm sm:text-lg"
+                >general</span
+              >
+              <h1
+                class="titulo text-center flex flex-col items-center leading-[0px] max-w-[180px] w-full xl:max-w-full xl:flex-row xl:justify-center xl:gap-2 mx-auto sm:max-w-full text-3xl sm:text-4xl lg:text-5xl xl:text-6xl"
+              >
+                <span
+                  class="capitalize font-semibold [text-shadow:0px_0px_20px_#000] tracking-tight leading-none"
+                  >natural
+                </span>
+                <span
+                  class="capitalize font-semibold [text-shadow:0px_0px_20px_#000] tracking-tight leading-none"
+                  >& moderno.</span
+                >
+              </h1>
+              <span
+                class="subtitulo text-xs text-center max-w-[150px] sm:max-w-full sm:text-sm"
+                >Lorem ipsum, dolor sit consectetur adipisicing.</span
+              >
+            </div>
+          </div>
+          <div class="swiper-slide relative w-full h-full">
+            <div
+              class="bg-slide-3 absolute top-0 left-0 w-full h-full bg-green-800 after:absolute after:inset-0 after:bg-black/20"
+            ></div>
+            <div
+              class="contenido-slider w-full h-full flex items-center justify-center flex-col px-4 md:px-8 lg:px-12 xl:px-16 text-white relative z-10 gap-4"
+            >
+              <span class="tag uppercase font-semibold text-sm sm:text-lg"
+                >general</span
+              >
+              <h1
+                class="titulo text-center flex flex-col items-center leading-[0px] max-w-[180px] w-full xl:max-w-full xl:flex-row xl:justify-center xl:gap-2 mx-auto sm:max-w-full text-3xl sm:text-4xl lg:text-5xl xl:text-6xl"
+              >
+                <span
+                  class="capitalize font-semibold [text-shadow:0px_0px_20px_#000] tracking-tight leading-none"
+                  >creativo</span
+                >
+                <span
+                  class="capitalize font-semibold [text-shadow:0px_0px_20px_#000] tracking-tight leading-none"
+                  >& profesional</span
+                >
+              </h1>
+              <span
+                class="subtitulo text-xs text-center max-w-[150px] sm:max-w-full sm:text-sm"
+                >Lorem ipsum, dolor sit consectetur adipisicing.</span
+              >
+            </div>
+          </div>
         </div>
+        <div class="swiper-pagination lg:hidden"></div>
+        <div
+          class="swiper-button-next hidden lg:flex bg-white !w-[100px] !h-[60px] xl:!h-[80px] xl:!w-[120px]"
+        ></div>
+        <div
+          class="swiper-button-prev hidden lg:flex bg-white !w-[100px] !h-[60px] xl:!h-[80px] xl:!w-[120px]"
+        ></div>
       </div>
     </div>
     <section
@@ -134,15 +199,60 @@
           <span class="deco text-white">-</span>
         </button>
       </div>
-      <div class="ilustraciones flex justify-end sm:mb-12 lg:mb-0">
-        <div
-          class="xl:h-[350px] xl:w-[600px] sm:h-[275px] sm:w-[445px] relative after:absolute after:w-full after:h-full after:top-12 after:!border-[25px] after:hidden sm:after:block after:!border-black/15 after:-z-[1] after:-left-12"
-        >
-          <img
-            src="/images/swiper-nosotros/img-nosotros-01-movil.webp"
-            class="h-full w-full"
-            alt=""
-          />
+      <div
+        class="ilustraciones xl:!h-[350px] xl:!w-[600px] sm:!h-[275px] !h-[55vw] max-h[275px] sm:max-h-[full] w-full sm:!w-[445px] ml-auto relative after:absolute after:w-full after:h-full after:top-12 after:!border-[25px] after:hidden sm:after:block after:!border-black/15 after:-z-[1] after:-left-12"
+      >
+        <div class="swiper-nosotros w-full h-full sm:h-full overflow-hidden">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide w-full h-full">
+              <img
+                src="/images/swiper-nosotros/img-nosotros-01-movil.webp"
+                class="w-full h-full lg:block"
+                alt=""
+              />
+              <img
+                src="/images/swiper-nosotros/img-nosotros-01-desk.webp"
+                class="w-full h-full hidden lg:block"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide w-full h-full">
+              <img
+                src="/images/swiper-nosotros/img-nosotros-02-movil.webp"
+                class="w-full h-full lg:block"
+                alt=""
+              />
+              <img
+                src="/images/swiper-nosotros/img-nosotros-02-desk.webp"
+                class="w-full h-full hidden lg:block"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide w-full h-full">
+              <img
+                src="/images/swiper-nosotros/img-nosotros-03-movil.webp"
+                class="w-full h-full lg:block"
+                alt=""
+              />
+              <img
+                src="/images/swiper-nosotros/img-nosotros-03-desk.webp"
+                class="w-full h-full hidden lg:block"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide w-full h-full">
+              <img
+                src="/images/swiper-nosotros/img-nosotros-04-movil.webp"
+                class="w-full h-full lg:block"
+                alt=""
+              />
+              <img
+                src="/images/swiper-nosotros/img-nosotros-04-desk.webp"
+                class="w-full h-full hidden lg:block"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
       </div>
       <footer
@@ -196,42 +306,58 @@
         </ul>
       </header>
       <div
-        class="swiper grid sm:grid-cols-2 h-fit lg:grid-cols-3 gap-8 xl:grid-cols-5"
+        class="swiper-proyectos min-h-[430px] max-h-[760px] sm:max-h-full sm:min-h-full sm:h-[380px] md:h-[520px] lg:h-[500px] xl:h-[400px] 2xl:h-[480px] overflow-hidden h-[160vw]"
       >
-        <div class="slide-1 h-full">
-          <img
-            src="/images/swiper-proyectos/img-proyectos-01.webp"
-            class="w-full h-full"
-            alt=""
-          />
-        </div>
-        <div class="slide-2 h-full hidden sm:block">
-          <img
-            src="/images/swiper-proyectos/img-proyectos-02.webp"
-            class="w-full h-full"
-            alt=""
-          />
-        </div>
-        <div class="slide-3 h-full hidden lg:block">
-          <img
-            src="/images/swiper-proyectos/img-proyectos-03.webp"
-            class="w-full h-full"
-            alt=""
-          />
-        </div>
-        <div class="slide-4 h-full hidden xl:block">
-          <img
-            src="/images/swiper-proyectos/img-proyectos-04.webp"
-            class="w-full h-full"
-            alt=""
-          />
-        </div>
-        <div class="slide-4 h-full hidden xl:block">
-          <img
-            src="/images/swiper-proyectos/img-proyectos-05.webp"
-            class="w-full h-full"
-            alt=""
-          />
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide-1 h-full w-full">
+            <img
+              src="/images/swiper-proyectos/img-proyectos-01.webp"
+              class="w-full h-full"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide slide-2 h-full">
+            <img
+              src="/images/swiper-proyectos/img-proyectos-02.webp"
+              class="w-full h-full"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide slide-3 h-full">
+            <img
+              src="/images/swiper-proyectos/img-proyectos-03.webp"
+              class="w-full h-full"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide slide-4 h-full">
+            <img
+              src="/images/swiper-proyectos/img-proyectos-04.webp"
+              class="w-full h-full"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide slide-5 h-full">
+            <img
+              src="/images/swiper-proyectos/img-proyectos-05.webp"
+              class="w-full h-full"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide slide-5 h-full">
+            <img
+              src="/images/swiper-proyectos/img-proyectos-06.webp"
+              class="w-full h-full"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide slide-5 h-full">
+            <img
+              src="/images/swiper-proyectos/img-proyectos-07.webp"
+              class="w-full h-full"
+              alt=""
+            />
+          </div>
         </div>
       </div>
       <footer
@@ -592,61 +718,152 @@
           testimonios
         </h2>
       </header>
-      <div class="swiper w-full lg:grid lg:gap-16 lg:grid-cols-2">
-        <div class="swiper-slide">
-          <div class="card-testimonio w-full p-1">
-            <div
-              class="imagen w-20 h-20 relative after:absolute after:w-[50%] after:h-[50%] after:-top-1 after:bg-black after:!-left-1 after:-z-[1]"
-            >
-              <img src="/images/testimonios//img-testimonio-01.webp" alt="" />
-            </div>
-            <div
-              class="contenido-testimonio w-full p-8 px-6 flex flex-col gap-4"
-            >
-              <header class="flex flex-col">
-                <span class="nombre uppercase font-semibold"
-                  >carla ramirez</span
-                >
-                <span class="posicion text-xs">Co-directora ejecutiva</span>
-              </header>
-              <div class="texto">
-                <div class="quote">
-                  <i class="fa-solid fa-quote-left text-2xl"></i>
+      <div
+        class="swiper-testimonios overflow-hidden w-full h-[385px] sm:h-[295px] md:h-[355px] lg:h-[295px] xl:h-[295px] lg:grid lg:gap-16 lg:grid-cols-2"
+      >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card-testimonio w-full p-1">
+              <div
+                class="imagen w-20 h-20 relative after:absolute after:w-[50%] after:h-[50%] after:-top-1 after:bg-black after:!-left-1 after:-z-[1]"
+              >
+                <img src="/images/testimonios//img-testimonio-01.webp" alt="" />
+              </div>
+              <div
+                class="contenido-testimonio w-full p-8 px-6 flex flex-col gap-4"
+              >
+                <header class="flex flex-col">
+                  <span class="nombre uppercase font-semibold"
+                    >carla ramirez</span
+                  >
+                  <span class="posicion text-xs">Co-directora ejecutiva</span>
+                </header>
+                <div class="texto">
+                  <div class="quote">
+                    <i class="fa-solid fa-quote-left text-2xl"></i>
+                  </div>
+                  <p class="text-xs leading-[30px]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                    magni omnis laborum provident sint pariatur id accusamus
+                    harum quia sunt.
+                  </p>
                 </div>
-                <p class="text-xs leading-[30px]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                  magni omnis laborum provident sint pariatur id accusamus harum
-                  quia sunt.
-                </p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="swiper-slide hidden lg:flex">
-          <div class="card-testimonio w-full p-1">
-            <div
-              class="imagen w-20 h-20 relative after:absolute after:w-[50%] after:h-[50%] after:-top-1 after:bg-black after:!-left-1 after:-z-[1]"
-            >
-              <img src="/images/testimonios/img-testimonio-02.webp" alt="" />
-            </div>
-            <div
-              class="contenido-testimonio w-full p-8 px-6 flex flex-col gap-4"
-            >
-              <header class="flex flex-col">
-                <span class="nombre uppercase font-semibold"
-                  >carla ramirez</span
-                >
-                <span class="posicion text-xs">Co-directora ejecutiva</span>
-              </header>
-              <div class="texto">
-                <div class="quote">
-                  <i class="fa-solid fa-quote-left text-2xl"></i>
+          <div class="swiper-slide">
+            <div class="card-testimonio w-full p-1">
+              <div
+                class="imagen w-20 h-20 relative after:absolute after:w-[50%] after:h-[50%] after:-top-1 after:bg-black after:!-left-1 after:-z-[1]"
+              >
+                <img src="/images/testimonios/img-testimonio-02.webp" alt="" />
+              </div>
+              <div
+                class="contenido-testimonio w-full p-8 px-6 flex flex-col gap-4"
+              >
+                <header class="flex flex-col">
+                  <span class="nombre uppercase font-semibold"
+                    >carla ramirez</span
+                  >
+                  <span class="posicion text-xs">Co-directora ejecutiva</span>
+                </header>
+                <div class="texto">
+                  <div class="quote">
+                    <i class="fa-solid fa-quote-left text-2xl"></i>
+                  </div>
+                  <p class="text-xs leading-[30px]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                    magni omnis laborum provident sint pariatur id accusamus
+                    harum quia sunt.
+                  </p>
                 </div>
-                <p class="text-xs leading-[30px]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                  magni omnis laborum provident sint pariatur id accusamus harum
-                  quia sunt.
-                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-testimonio w-full p-1">
+              <div
+                class="imagen w-20 h-20 relative after:absolute after:w-[50%] after:h-[50%] after:-top-1 after:bg-black after:!-left-1 after:-z-[1]"
+              >
+                <img src="/images/testimonios/img-testimonio-03.webp" alt="" />
+              </div>
+              <div
+                class="contenido-testimonio w-full p-8 px-6 flex flex-col gap-4"
+              >
+                <header class="flex flex-col">
+                  <span class="nombre uppercase font-semibold"
+                    >carla ramirez</span
+                  >
+                  <span class="posicion text-xs">Co-directora ejecutiva</span>
+                </header>
+                <div class="texto">
+                  <div class="quote">
+                    <i class="fa-solid fa-quote-left text-2xl"></i>
+                  </div>
+                  <p class="text-xs leading-[30px]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                    magni omnis laborum provident sint pariatur id accusamus
+                    harum quia sunt.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-testimonio w-full p-1">
+              <div
+                class="imagen w-20 h-20 relative after:absolute after:w-[50%] after:h-[50%] after:-top-1 after:bg-black after:!-left-1 after:-z-[1]"
+              >
+                <img src="/images/testimonios/img-testimonio-04.webp" alt="" />
+              </div>
+              <div
+                class="contenido-testimonio w-full p-8 px-6 flex flex-col gap-4"
+              >
+                <header class="flex flex-col">
+                  <span class="nombre uppercase font-semibold"
+                    >carla ramirez</span
+                  >
+                  <span class="posicion text-xs">Co-directora ejecutiva</span>
+                </header>
+                <div class="texto">
+                  <div class="quote">
+                    <i class="fa-solid fa-quote-left text-2xl"></i>
+                  </div>
+                  <p class="text-xs leading-[30px]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                    magni omnis laborum provident sint pariatur id accusamus
+                    harum quia sunt.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-testimonio w-full p-1">
+              <div
+                class="imagen w-20 h-20 relative after:absolute after:w-[50%] after:h-[50%] after:-top-1 after:bg-black after:!-left-1 after:-z-[1]"
+              >
+                <img src="/images/testimonios/img-testimonio-05.webp" alt="" />
+              </div>
+              <div
+                class="contenido-testimonio w-full p-8 px-6 flex flex-col gap-4"
+              >
+                <header class="flex flex-col">
+                  <span class="nombre uppercase font-semibold"
+                    >carla ramirez</span
+                  >
+                  <span class="posicion text-xs">Co-directora ejecutiva</span>
+                </header>
+                <div class="texto">
+                  <div class="quote">
+                    <i class="fa-solid fa-quote-left text-2xl"></i>
+                  </div>
+                  <p class="text-xs leading-[30px]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                    magni omnis laborum provident sint pariatur id accusamus
+                    harum quia sunt.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -677,31 +894,38 @@
           </h2>
         </header>
         <div
-          class="swiper bg-white grid grid-cols-2 sm:grid-cols-3 py-4 md:grid-cols-4 lg:grid-cols-5"
+          class="swiper-clientes h-[32vw] overflow-hidden max-h-[180px] sm:h-[125px] md:h-[160px] sm:max-h-full lg:h-[90px] xl:h-[110px] bg-white"
         >
-          <div class="swiper-slide p-4">
-            <div class="cliente">
-              <img src="/images/clientes/w1.png" alt="" />
+          <div class="swiper-wrapper">
+            <div class="swiper-slide p-4">
+              <div class="cliente">
+                <img src="/images/clientes/w1.png" c alt="" />
+              </div>
             </div>
-          </div>
-          <div class="swiper-slide p-4">
-            <div class="cliente">
-              <img src="/images/clientes/w1.png" alt="" />
+            <div class="swiper-slide p-4">
+              <div class="cliente">
+                <img src="/images/clientes/w2.png" alt="" />
+              </div>
             </div>
-          </div>
-          <div class="swiper-slide p-4 hidden sm:block">
-            <div class="cliente">
-              <img src="/images/clientes/w1.png" alt="" />
+            <div class="swiper-slide p-4">
+              <div class="cliente">
+                <img src="/images/clientes/w3.png" alt="" />
+              </div>
             </div>
-          </div>
-          <div class="swiper-slide p-4 hidden md:block">
-            <div class="cliente">
-              <img src="/images/clientes/w1.png" alt="" />
+            <div class="swiper-slide p-4">
+              <div class="cliente">
+                <img src="/images/clientes/w4.png" alt="" />
+              </div>
             </div>
-          </div>
-          <div class="swiper-slide p-4 hidden lg:block">
-            <div class="cliente">
-              <img src="/images/clientes/w1.png" alt="" />
+            <div class="swiper-slide p-4">
+              <div class="cliente">
+                <img src="/images/clientes/w5.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide p-4">
+              <div class="cliente">
+                <img src="/images/clientes/w6.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -740,5 +964,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

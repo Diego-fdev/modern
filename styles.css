@@ -30,19 +30,6 @@ body {
   min-height: 100vh;
 }
 
-.bg-slide-1 {
-  background-image: url("/images/main-slider-bg/main-bg-03-movil.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media (min-width: 768px) {
-  .bg-slide-1 {
-    background-image: url("/images/main-slider-bg/main-bg-03-desk.webp");
-  }
-}
-
 .roboto {
   font-family: "Roboto", sans-serif;
 }
@@ -53,6 +40,36 @@ body {
 
 .sub-experto::after {
   z-index: -2 !important;
+}
+
+/*ESTILOS HERO PRINCIPAL*/
+.bg-slide-1 {
+  background-image: url("/images/main-slider-bg/main-bg-03-movil.webp");
+}
+.bg-slide-2 {
+  background-image: url("/images/main-slider-bg/main-bg-02-movil.webp");
+}
+.bg-slide-3 {
+  background-image: url("/images/main-slider-bg/main-bg-01-movil.webp");
+}
+.bg-slide-1,
+.bg-slide-2,
+.bg-slide-3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .bg-slide-1 {
+    background-image: url("/images/main-slider-bg/main-bg-03-desk.webp");
+  }
+  .bg-slide-2 {
+    background-image: url("/images/main-slider-bg/main-bg-02-desk.webp");
+  }
+  .bg-slide-3 {
+    background-image: url("/images/main-slider-bg/main-bg-01-desk.webp");
+  }
 }
 
 /*ESTILOS CARD TESTIMONIO*/
@@ -80,4 +97,25 @@ body {
   .item-noticia:nth-child(even) {
     grid-template-columns: 500px 1fr;
   }
+}
+
+/*ESTILOS SWIPER HERO PRINCIPAL*/
+
+.swiper-container .swiper-button-next svg,
+.swiper-container .swiper-button-prev svg {
+  width: 18px;
+  height: 18px;
+  color: #000;
+}
+
+.swiper-container .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #fff;
+  opacity: 0.7;
+  transition: background-color 0.2s ease-in-out;
+}
+.swiper-container .swiper-pagination-bullet-active {
+  background-color: #fff;
+  opacity: 1;
 }
