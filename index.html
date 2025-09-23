@@ -233,216 +233,381 @@
         ></div>
       </div>
     </div>
-    <section
-      class="px-4 lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-0 pt-20 pb-10 grid gap-12 max-w-[540px] md:max-w-[720px] lg:grid-cols-[400px_1fr] xl:grid-cols-[480px_1fr] lg:gap-x-4"
-    >
-      <div class="main-content flex flex-col gap-4">
-        <header class="flex flex-col gap-2">
-          <span class="uppercase text-lg sm:text-2xl md:text-3xl"
-            >bienvenido</span
+    <section class="bg-[#f6f7f8]">
+      <div
+        class="main-container px-4 lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-0 pt-20 pb-10 grid gap-12 max-w-[540px] md:max-w-[720px] lg:grid-cols-[400px_1fr] xl:grid-cols-[480px_1fr] lg:gap-x-4"
+      >
+        <div class="main-content flex flex-col gap-4">
+          <header class="flex flex-col gap-2">
+            <span class="uppercase text-lg sm:text-2xl md:text-3xl"
+              >bienvenido</span
+            >
+            <h2
+              class="uppercase font-semibold text-3xl sm:text-4xl md:!text-[40px]"
+            >
+              somos una empresa creativa de construcción y diseño
+            </h2>
+          </header>
+          <p class="uppercase text-xs leading-[25px]">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+            vitae, debitis maxime.
+          </p>
+          <p class="text-xs leading-[25px]">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+            inventore esse consectetur pariatur dolorum quod, veritatis nulla
+            harum vero sit accusantium, laudantium architecto id ea deserunt.
+            Exercitationem maiores odio cum tenetur et?
+          </p>
+
+          <button
+            class="btn-principal w-fit bg-black py-4 px-6 min-w-[200px] flex justify-between items-center"
           >
+            <span class="text-white text-sm uppercase tracking-widest"
+              >leer mas</span
+            >
+            <span class="deco text-white">-</span>
+          </button>
+        </div>
+        <div
+          class="ilustraciones xl:!h-[350px] xl:!w-[600px] sm:!h-[275px] !h-[55vw] max-h[275px] sm:max-h-[full] w-full sm:!w-[445px] ml-auto relative after:absolute after:w-full after:h-full after:top-12 after:!border-[25px] after:hidden sm:after:block after:!border-black/15 after:-z-[1] after:-left-12"
+        >
+          <div class="swiper-nosotros w-full h-full sm:h-full overflow-hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide w-full h-full">
+                <img
+                  src="/images/swiper-nosotros/img-nosotros-01-movil.webp"
+                  class="w-full h-full lg:block"
+                  alt=""
+                />
+                <img
+                  src="/images/swiper-nosotros/img-nosotros-01-desk.webp"
+                  class="w-full h-full hidden lg:block"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide w-full h-full">
+                <img
+                  src="/images/swiper-nosotros/img-nosotros-02-movil.webp"
+                  class="w-full h-full lg:block"
+                  alt=""
+                />
+                <img
+                  src="/images/swiper-nosotros/img-nosotros-02-desk.webp"
+                  class="w-full h-full hidden lg:block"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide w-full h-full">
+                <img
+                  src="/images/swiper-nosotros/img-nosotros-03-movil.webp"
+                  class="w-full h-full lg:block"
+                  alt=""
+                />
+                <img
+                  src="/images/swiper-nosotros/img-nosotros-03-desk.webp"
+                  class="w-full h-full hidden lg:block"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide w-full h-full">
+                <img
+                  src="/images/swiper-nosotros/img-nosotros-04-movil.webp"
+                  class="w-full h-full lg:block"
+                  alt=""
+                />
+                <img
+                  src="/images/swiper-nosotros/img-nosotros-04-desk.webp"
+                  class="w-full h-full hidden lg:block"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer
+          class="flex flex-col items-end pr-8 relative after:absolute after:w-2 after:h-full after:bg-black after:right-0 after:top-0 sm:mt-10 lg:col-span-2 lg:mt-0"
+        >
+          <span
+            class="main-text-footer text-4xl sm:text-5xl md:text-6xl lg:!text-[80px] font-bold uppercase text-black/10"
+            >18 años</span
+          >
+          <span
+            class="sub-text-footer roboto uppercase text-sm font-medium md:text-base lg:text-lg"
+            >experiencia</span
+          >
+        </footer>
+      </div>
+    </section>
+    <section class="relative overflow-hidden">
+      <div
+        class="deco-shape w-[500px] h-[500px] !border-[40px] border-gray-200 -bottom-40 -right-80 absolute rotate-45 z-[-1]"
+      ></div>
+      <div
+        class="px-4 lg:max-w-full lg:px-16 mx-auto sm:px-0 pt-20 pb-10 flex flex-col gap-12 max-w-[540px] md:max-w-[720px] relative"
+      >
+        <header class="flex flex-col gap-8 w-full">
           <h2
             class="uppercase font-semibold text-3xl sm:text-4xl md:!text-[40px]"
           >
-            somos una empresa creativa de construcción y diseño
+            ultimos proyectos
           </h2>
+          <ul class="filtros flex flex-wrap items-center gap-2 lg:self-end">
+            <li
+              data-filter="todos"
+              class="cursor-pointer pr-2 py-1 relative after:absolute after:top-[25%] after:-right-1 after:w-[2px] after:h-[50%] after:bg-black/30 after:-skew-12 filtro-proyectos text-[#2749ff]"
+            >
+              <span class="capitalize font-semibold text-sm sm:text-lg"
+                >todos</span
+              >
+            </li>
+            <li
+              data-filter="interior"
+              class="cursor-pointer px-2 py-1 relative after:absolute after:top-[25%] after:-right-1 after:w-[2px] after:h-[50%] after:bg-black/30 after:-skew-12 filtro-proyectos"
+            >
+              <span class="capitalize font-semibold text-sm sm:text-lg"
+                >interior</span
+              >
+            </li>
+            <li
+              data-filter="casas"
+              class="cursor-pointer px-2 py-1 relative after:absolute after:top-[25%] after:-right-1 after:w-[2px] after:h-[50%] after:bg-black/30 after:-skew-12 filtro-proyectos"
+            >
+              <span class="capitalize font-semibold text-sm sm:text-lg"
+                >casas</span
+              >
+            </li>
+            <li
+              class="px-2 py-1 filtro-proyectos cursor-pointer"
+              data-filter="edificios"
+            >
+              <span class="capitalize font-semibold text-sm sm:text-lg"
+                >edificios</span
+              >
+            </li>
+          </ul>
         </header>
-        <p class="uppercase text-xs leading-[25px]">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt vitae,
-          debitis maxime.
-        </p>
-        <p class="text-xs leading-[25px]">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-          inventore esse consectetur pariatur dolorum quod, veritatis nulla
-          harum vero sit accusantium, laudantium architecto id ea deserunt.
-          Exercitationem maiores odio cum tenetur et?
-        </p>
-
-        <button
-          class="btn-principal w-fit bg-black py-4 px-6 min-w-[200px] flex justify-between items-center"
+        <div
+          class="swiper-proyectos min-h-[430px] max-h-[760px] sm:max-h-full sm:min-h-full sm:h-[380px] md:h-[520px] lg:h-[500px] xl:h-[400px] 2xl:h-[480px] overflow-hidden h-[160vw]"
         >
-          <span class="text-white text-sm uppercase tracking-widest"
-            >leer mas</span
-          >
-          <span class="deco text-white">-</span>
-        </button>
-      </div>
-      <div
-        class="ilustraciones xl:!h-[350px] xl:!w-[600px] sm:!h-[275px] !h-[55vw] max-h[275px] sm:max-h-[full] w-full sm:!w-[445px] ml-auto relative after:absolute after:w-full after:h-full after:top-12 after:!border-[25px] after:hidden sm:after:block after:!border-black/15 after:-z-[1] after:-left-12"
-      >
-        <div class="swiper-nosotros w-full h-full sm:h-full overflow-hidden">
           <div class="swiper-wrapper">
-            <div class="swiper-slide w-full h-full">
+            <div
+              data-type="edificios"
+              class="swiper-slide relative item-proyecto h-full group"
+            >
+              <div
+                class="deco hidden transition-opacity opacity-0 group-hover:!opacity-100 absolute top-0 left-0 w-full h-full bg-black p-10 text-white lg:flex flex-col gap-4 after:absolute after:top-0 after:left-6 after:w-[2px] after:h-12 after:bg-white before:absolute before:top-6 before:left-0 before:w-12 before:h-[2px] before:bg-white group-hover:after:h-[90%] group-hover:before:w-[90%] after:transition-all before:transition-all before:delay-100 after:delay-100 before:duration-300 after:duration-300"
+              >
+                <span class="uppercase text-xl"
+                  >casa triangular en el lago</span
+                >
+                <p class="text-xs leading-[30px]">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Veniam iste officia iusto, architecto delectus commodi quaerat
+                  dolorem repudiandae.
+                </p>
+                <div
+                  class="btn-special cursor-pointer flex items-center justify-between gap-4 w-fit self-end mt-auto"
+                >
+                  <span class="uppercase text-xs lx:text-sm">ver mas</span>
+                  <span class="text-xs xl:text-sm">-</span>
+                </div>
+              </div>
               <img
-                src="/images/swiper-nosotros/img-nosotros-01-movil.webp"
-                class="w-full h-full lg:block"
-                alt=""
-              />
-              <img
-                src="/images/swiper-nosotros/img-nosotros-01-desk.webp"
-                class="w-full h-full hidden lg:block"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide w-full h-full">
-              <img
-                src="/images/swiper-nosotros/img-nosotros-02-movil.webp"
-                class="w-full h-full lg:block"
-                alt=""
-              />
-              <img
-                src="/images/swiper-nosotros/img-nosotros-02-desk.webp"
-                class="w-full h-full hidden lg:block"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide w-full h-full">
-              <img
-                src="/images/swiper-nosotros/img-nosotros-03-movil.webp"
-                class="w-full h-full lg:block"
-                alt=""
-              />
-              <img
-                src="/images/swiper-nosotros/img-nosotros-03-desk.webp"
-                class="w-full h-full hidden lg:block"
+                src="/images/swiper-proyectos/img-proyectos-01.webp"
+                class="w-full h-full"
                 alt=""
               />
             </div>
-            <div class="swiper-slide w-full h-full">
+            <div
+              data-type="casas"
+              class="swiper-slide item-proyecto h-full relative group"
+            >
+              <div
+                class="deco hidden transition-opacity opacity-0 group-hover:!opacity-100 absolute top-0 left-0 w-full h-full bg-black p-10 text-white lg:flex flex-col gap-4 after:absolute after:top-0 after:left-6 after:w-[2px] after:h-12 after:bg-white before:absolute before:top-6 before:left-0 before:w-12 before:h-[2px] before:bg-white group-hover:after:h-[90%] group-hover:before:w-[90%] after:transition-all before:transition-all before:delay-100 after:delay-100 before:duration-300 after:duration-300"
+              >
+                <span class="uppercase text-xl"
+                  >casa triangular en el lago</span
+                >
+                <p class="text-xs leading-[30px]">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Veniam iste officia iusto, architecto delectus commodi quaerat
+                  dolorem repudiandae.
+                </p>
+                <div
+                  class="btn-special cursor-pointer flex items-center justify-between gap-4 w-fit self-end mt-auto"
+                >
+                  <span class="uppercase text-xs lx:text-sm">ver mas</span>
+                  <span class="text-xs xl:text-sm">-</span>
+                </div>
+              </div>
               <img
-                src="/images/swiper-nosotros/img-nosotros-04-movil.webp"
-                class="w-full h-full lg:block"
+                src="/images/swiper-proyectos/img-proyectos-02.webp"
+                class="w-full h-full"
                 alt=""
               />
+            </div>
+            <div
+              data-type="edificios"
+              class="swiper-slide item-proyecto h-full relative group"
+            >
+              <div
+                class="deco hidden transition-opacity opacity-0 group-hover:!opacity-100 absolute top-0 left-0 w-full h-full bg-black p-10 text-white lg:flex flex-col gap-4 after:absolute after:top-0 after:left-6 after:w-[2px] after:h-12 after:bg-white before:absolute before:top-6 before:left-0 before:w-12 before:h-[2px] before:bg-white group-hover:after:h-[90%] group-hover:before:w-[90%] after:transition-all before:transition-all before:delay-100 after:delay-100 before:duration-300 after:duration-300"
+              >
+                <span class="uppercase text-xl"
+                  >casa triangular en el lago</span
+                >
+                <p class="text-xs leading-[30px]">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Veniam iste officia iusto, architecto delectus commodi quaerat
+                  dolorem repudiandae.
+                </p>
+                <div
+                  class="btn-special cursor-pointer flex items-center justify-between gap-4 w-fit self-end mt-auto"
+                >
+                  <span class="uppercase text-xs lx:text-sm">ver mas</span>
+                  <span class="text-xs xl:text-sm">-</span>
+                </div>
+              </div>
               <img
-                src="/images/swiper-nosotros/img-nosotros-04-desk.webp"
-                class="w-full h-full hidden lg:block"
+                src="/images/swiper-proyectos/img-proyectos-03.webp"
+                class="w-full h-full"
+                alt=""
+              />
+            </div>
+            <div
+              data-type="interior"
+              class="swiper-slide item-proyecto h-full relative group"
+            >
+              <div
+                class="deco hidden transition-opacity opacity-0 group-hover:!opacity-100 absolute top-0 left-0 w-full h-full bg-black p-10 text-white lg:flex flex-col gap-4 after:absolute after:top-0 after:left-6 after:w-[2px] after:h-12 after:bg-white before:absolute before:top-6 before:left-0 before:w-12 before:h-[2px] before:bg-white group-hover:after:h-[90%] group-hover:before:w-[90%] after:transition-all before:transition-all before:delay-100 after:delay-100 before:duration-300 after:duration-300"
+              >
+                <span class="uppercase text-xl"
+                  >casa triangular en el lago</span
+                >
+                <p class="text-xs leading-[30px]">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Veniam iste officia iusto, architecto delectus commodi quaerat
+                  dolorem repudiandae.
+                </p>
+                <div
+                  class="btn-special cursor-pointer flex items-center justify-between gap-4 w-fit self-end mt-auto"
+                >
+                  <span class="uppercase text-xs lx:text-sm">ver mas</span>
+                  <span class="text-xs xl:text-sm">-</span>
+                </div>
+              </div>
+              <img
+                src="/images/swiper-proyectos/img-proyectos-04.webp"
+                class="w-full h-full"
+                alt=""
+              />
+            </div>
+            <div
+              data-type="interior"
+              class="swiper-slide item-proyecto h-full relative group"
+            >
+              <div
+                class="deco hidden transition-opacity opacity-0 group-hover:!opacity-100 absolute top-0 left-0 w-full h-full bg-black p-10 text-white lg:flex flex-col gap-4 after:absolute after:top-0 after:left-6 after:w-[2px] after:h-12 after:bg-white before:absolute before:top-6 before:left-0 before:w-12 before:h-[2px] before:bg-white group-hover:after:h-[90%] group-hover:before:w-[90%] after:transition-all before:transition-all before:delay-100 after:delay-100 before:duration-300 after:duration-300"
+              >
+                <span class="uppercase text-xl"
+                  >casa triangular en el lago</span
+                >
+                <p class="text-xs leading-[30px]">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Veniam iste officia iusto, architecto delectus commodi quaerat
+                  dolorem repudiandae.
+                </p>
+                <div
+                  class="btn-special cursor-pointer flex items-center justify-between gap-4 w-fit self-end mt-auto"
+                >
+                  <span class="uppercase text-xs lx:text-sm">ver mas</span>
+                  <span class="text-xs xl:text-sm">-</span>
+                </div>
+              </div>
+              <img
+                src="/images/swiper-proyectos/img-proyectos-05.webp"
+                class="w-full h-full"
+                alt=""
+              />
+            </div>
+            <div
+              data-type="interior"
+              class="swiper-slide item-proyecto h-full relative group"
+            >
+              <div
+                class="deco hidden transition-opacity opacity-0 group-hover:!opacity-100 absolute top-0 left-0 w-full h-full bg-black p-10 text-white lg:flex flex-col gap-4 after:absolute after:top-0 after:left-6 after:w-[2px] after:h-12 after:bg-white before:absolute before:top-6 before:left-0 before:w-12 before:h-[2px] before:bg-white group-hover:after:h-[90%] group-hover:before:w-[90%] after:transition-all before:transition-all before:delay-100 after:delay-100 before:duration-300 after:duration-300"
+              >
+                <span class="uppercase text-xl"
+                  >casa triangular en el lago</span
+                >
+                <p class="text-xs leading-[30px]">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Veniam iste officia iusto, architecto delectus commodi quaerat
+                  dolorem repudiandae.
+                </p>
+                <div
+                  class="btn-special cursor-pointer flex items-center justify-between gap-4 w-fit self-end mt-auto"
+                >
+                  <span class="uppercase text-xs lx:text-sm">ver mas</span>
+                  <span class="text-xs xl:text-sm">-</span>
+                </div>
+              </div>
+              <img
+                src="/images/swiper-proyectos/img-proyectos-06.webp"
+                class="w-full h-full"
+                alt=""
+              />
+            </div>
+            <div
+              data-type="casas"
+              class="swiper-slide item-proyecto h-full relative group"
+            >
+              <div
+                class="deco hidden transition-opacity opacity-0 group-hover:!opacity-100 absolute top-0 left-0 w-full h-full bg-black p-10 text-white lg:flex flex-col gap-4 after:absolute after:top-0 after:left-6 after:w-[2px] after:h-12 after:bg-white before:absolute before:top-6 before:left-0 before:w-12 before:h-[2px] before:bg-white group-hover:after:h-[90%] group-hover:before:w-[90%] after:transition-all before:transition-all before:delay-100 after:delay-100 before:duration-300 after:duration-300"
+              >
+                <span class="uppercase text-xl"
+                  >casa triangular en el lago</span
+                >
+                <p class="text-xs leading-[30px]">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Veniam iste officia iusto, architecto delectus commodi quaerat
+                  dolorem repudiandae.
+                </p>
+                <div
+                  class="btn-special cursor-pointer flex items-center justify-between gap-4 w-fit self-end mt-auto"
+                >
+                  <span class="uppercase text-xs lx:text-sm">ver mas</span>
+                  <span class="text-xs xl:text-sm">-</span>
+                </div>
+              </div>
+              <img
+                src="/images/swiper-proyectos/img-proyectos-07.webp"
+                class="w-full h-full"
                 alt=""
               />
             </div>
           </div>
         </div>
+        <footer
+          class="flex flex-col items-end pr-8 relative after:absolute after:w-2 after:h-full after:bg-black after:right-0 after:top-0"
+        >
+          <span
+            class="main-text-footer text-4xl sm:text-5xl md:text-6xl lg:!text-[80px] font-bold uppercase text-black/10"
+            >increibles</span
+          >
+          <span
+            class="sub-text-footer roboto uppercase text-sm font-medium md:text-base lg:text-lg"
+            >diseños</span
+          >
+        </footer>
       </div>
-      <footer
-        class="flex flex-col items-end pr-8 relative after:absolute after:w-2 after:h-full after:bg-black after:right-0 after:top-0 sm:mt-10 lg:col-span-2 lg:mt-0"
-      >
-        <span
-          class="main-text-footer text-4xl sm:text-5xl md:text-6xl lg:!text-[80px] font-bold uppercase text-black/20"
-          >18 años</span
-        >
-        <span
-          class="sub-text-footer roboto uppercase text-sm font-medium md:text-base lg:text-lg"
-          >experiencia</span
-        >
-      </footer>
     </section>
     <section
-      class="px-4 lg:max-w-full lg:px-16 mx-auto sm:px-0 pt-20 pb-10 flex flex-col gap-12 max-w-[540px] md:max-w-[720px]"
+      class="bg-black lg:grid lg:grid-cols-2 lg:bg-white relative overflow-hidden"
     >
-      <header class="flex flex-col gap-8 w-full">
-        <h2
-          class="uppercase font-semibold text-3xl sm:text-4xl md:!text-[40px]"
-        >
-          ultimos proyectos
-        </h2>
-        <ul class="filtros flex flex-wrap items-center gap-2 lg:self-end">
-          <li
-            class="pr-2 py-1 relative after:absolute after:top-[25%] after:-right-1 after:w-[2px] after:h-[50%] after:bg-black/30 after:-skew-12"
-          >
-            <span class="capitalize font-semibold text-sm sm:text-lg"
-              >todos</span
-            >
-          </li>
-          <li
-            class="px-2 py-1 relative after:absolute after:top-[25%] after:-right-1 after:w-[2px] after:h-[50%] after:bg-black/30 after:-skew-12"
-          >
-            <span class="capitalize font-semibold text-sm sm:text-lg"
-              >interior</span
-            >
-          </li>
-          <li
-            class="px-2 py-1 relative after:absolute after:top-[25%] after:-right-1 after:w-[2px] after:h-[50%] after:bg-black/30 after:-skew-12"
-          >
-            <span class="capitalize font-semibold text-sm sm:text-lg"
-              >casas</span
-            >
-          </li>
-          <li class="px-2 py-1">
-            <span class="capitalize font-semibold text-sm sm:text-lg"
-              >edificios</span
-            >
-          </li>
-        </ul>
-      </header>
       <div
-        class="swiper-proyectos min-h-[430px] max-h-[760px] sm:max-h-full sm:min-h-full sm:h-[380px] md:h-[520px] lg:h-[500px] xl:h-[400px] 2xl:h-[480px] overflow-hidden h-[160vw]"
-      >
-        <div class="swiper-wrapper">
-          <div class="swiper-slide slide-1 h-full w-full">
-            <img
-              src="/images/swiper-proyectos/img-proyectos-01.webp"
-              class="w-full h-full"
-              alt=""
-            />
-          </div>
-          <div class="swiper-slide slide-2 h-full">
-            <img
-              src="/images/swiper-proyectos/img-proyectos-02.webp"
-              class="w-full h-full"
-              alt=""
-            />
-          </div>
-          <div class="swiper-slide slide-3 h-full">
-            <img
-              src="/images/swiper-proyectos/img-proyectos-03.webp"
-              class="w-full h-full"
-              alt=""
-            />
-          </div>
-          <div class="swiper-slide slide-4 h-full">
-            <img
-              src="/images/swiper-proyectos/img-proyectos-04.webp"
-              class="w-full h-full"
-              alt=""
-            />
-          </div>
-          <div class="swiper-slide slide-5 h-full">
-            <img
-              src="/images/swiper-proyectos/img-proyectos-05.webp"
-              class="w-full h-full"
-              alt=""
-            />
-          </div>
-          <div class="swiper-slide slide-5 h-full">
-            <img
-              src="/images/swiper-proyectos/img-proyectos-06.webp"
-              class="w-full h-full"
-              alt=""
-            />
-          </div>
-          <div class="swiper-slide slide-5 h-full">
-            <img
-              src="/images/swiper-proyectos/img-proyectos-07.webp"
-              class="w-full h-full"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-      <footer
-        class="flex flex-col items-end pr-8 relative after:absolute after:w-2 after:h-full after:bg-black after:right-0 after:top-0"
-      >
-        <span
-          class="main-text-footer text-4xl sm:text-5xl md:text-6xl lg:!text-[80px] font-bold uppercase text-black/20"
-          >increibles</span
-        >
-        <span
-          class="sub-text-footer roboto uppercase text-sm font-medium md:text-base lg:text-lg"
-          >diseños</span
-        >
-      </footer>
-    </section>
-    <section class="bg-black lg:grid lg:grid-cols-2 lg:bg-white">
+        class="deco-shape w-[500px] h-[500px] !border-[40px] border-gray-200 -bottom-40 -right-80 absolute rotate-45"
+      ></div>
       <div
         class="contenido-section px-4 mx-auto sm:px-0 pt-20 pb-10 max-w-[540px] md:max-w-[720px] lg:max-w-full w-full lg:px-12 flex flex-col gap-8 lg:bg-black text-white"
       >
@@ -495,11 +660,13 @@
           </div>
         </div>
       </div>
-      <div class="expertos-2 bg-white h-full">
+      <div class="expertos-2 bg-[#f6f7f8] h-full">
         <div
           class="contenido-expertos px-4 mx-auto sm:px-0 pt-20 pb-10 lg:pb-0 lg:pt-40 max-w-[540px] md:max-w-[720px] lg:max-w-[650px] lg:mx-0 w-full lg:pl-12 grid gap-8 sm:grid-cols-2"
         >
-          <div class="sub-experto flex flex-col items-center w-full">
+          <div
+            class="sub-experto relative flex flex-col items-center w-full after:absolute after:-bottom-1 after:-left-1 after:w-12 after:h-12 after:bg-black after:-z-10"
+          >
             <div class="imagen h-full w-full">
               <img
                 src="/images//equipo/img-equipo-02.webp"
@@ -585,7 +752,7 @@
             class="flex flex-col items-end pr-8 relative after:absolute after:w-2 after:h-full after:bg-black after:right-0 after:top-0 sm:col-span-2 lg:mt-12"
           >
             <span
-              class="main-text-footer text-[42px] md:text-6xl lg:!text-[80px] font-bold uppercase text-black/20"
+              class="main-text-footer text-[42px] md:text-6xl lg:!text-[80px] font-bold uppercase text-black/10"
               >miembros</span
             >
             <span
@@ -596,121 +763,126 @@
         </div>
       </div>
     </section>
-    <section
-      class="blog px-4 lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-0 pt-20 pb-10 grid gap-12 max-w-[540px] md:max-w-[720px]"
-    >
-      <header class="flex flex-col gap-8 w-full">
-        <h2
-          class="uppercase font-semibold text-3xl sm:text-4xl md:!text-[40px]"
-        >
-          ultimos blogs
-        </h2>
-      </header>
+    <section class="section-blog">
+      <div
+        class="main-container px-4 lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-0 pt-20 pb-10 grid gap-12 max-w-[540px] md:max-w-[720px]"
+      >
+        <header class="flex flex-col gap-8 w-full">
+          <h2
+            class="uppercase font-semibold text-3xl sm:text-4xl md:!text-[40px]"
+          >
+            ultimos blogs
+          </h2>
+        </header>
 
-      <div class="contenido-blog grid gap-8 lg:grid-cols-2 lg:grid-rows-2">
-        <div
-          class="small-blog w-full h-[250px] lg:!w-[430px] lg:ml-auto relative p-4 flex items-end xl:!w-[540px]"
-        >
+        <div class="contenido-blog grid gap-8 lg:grid-cols-2 lg:grid-rows-2">
           <div
-            class="imagen w-full absolute top-0 left-0 h-[250px] after:inset-0 after:absolute after:bg-black/50"
+            class="small-blog w-full h-[250px] lg:!w-[430px] lg:ml-auto relative p-4 flex items-end xl:!w-[540px]"
           >
-            <img
-              src="/images/blog-pag-principal/img-blog-01.webp"
-              class="h-full w-full"
-              alt=""
-            />
-          </div>
-          <div
-            class="contenido-small-blog flex items-start py-4 px-2 gap-4 bg-black w-full max-w-[350px] h-[120px] relative z-[2] text-white lg:relative lg:-left-10"
-          >
-            <span
-              class="[writing-mode:vertical-lr] uppercase font-medium scale-y-[-1] scale-x-[-1] text-xs h-full text-center"
-              >20 sep 2025</span
-            >
-            <span class="text-xl uppercase font-medium"
-              >titulo de posteo blog</span
-            >
-          </div>
-        </div>
-        <div
-          class="small-blog w-full h-[250px] lg:!w-[430px] lg:ml-auto relative p-4 flex items-end lg:col-start-1 lg:row-start-2 xl:!w-[540px]"
-        >
-          <div
-            class="imagen w-full absolute top-0 left-0 h-[250px] after:inset-0 after:absolute after:bg-black/50"
-          >
-            <img
-              src="/images/blog-pag-principal/img-blog-01.webp"
-              class="h-full w-full"
-              alt=""
-            />
-          </div>
-          <div
-            class="contenido-small-blog flex items-start py-4 px-2 gap-4 bg-black w-full max-w-[350px] h-[120px] relative z-[2] text-white lg:relative lg:-left-10"
-          >
-            <span
-              class="[writing-mode:vertical-lr] uppercase font-medium scale-y-[-1] scale-x-[-1] text-xs h-full text-center"
-              >20 sep 2025</span
-            >
-            <span class="text-xl uppercase font-medium"
-              >titulo de posteo blog</span
-            >
-          </div>
-        </div>
-        <div
-          class="big-blog w-full h-[500px] lg:h-[532px] relative p-4 flex py-20 lg:col-start-2 lg:row-span-2 lg:!w-[400px] xl:!w-[500px]"
-        >
-          <div
-            class="imagen w-full absolute top-0 left-0 h-full after:inset-0 after:absolute after:bg-black/50"
-          >
-            <img
-              src="/images/blog-pag-principal/img-blog-03.webp"
-              class="h-full w-full"
-              alt=""
-            />
-          </div>
-          <div
-            class="contenido-big-blog-post flex gap-4 w-full h-full relative z-[2] xl:left-20"
-          >
-            <span
-              class="[writing-mode:vertical-lr] uppercase font-medium scale-y-[-1] scale-x-[-1] text-xs h-fit text-center text-white lg:text-lg"
-              >20 sep 2025</span
-            >
             <div
-              class="w-full h-full !border-[12px] flex flex-col gap-4 p-4 border-black text-white lg:relative lg:min-w-[380px]"
+              class="imagen w-full absolute top-0 left-0 h-[250px] after:inset-0 after:absolute after:bg-black/50"
+            >
+              <img
+                src="/images/blog-pag-principal/img-blog-01.webp"
+                class="h-full w-full"
+                alt=""
+              />
+            </div>
+            <div
+              class="contenido-small-blog flex items-start py-4 px-2 gap-4 bg-black w-full max-w-[350px] h-[120px] relative z-[2] text-white lg:relative lg:-left-10"
             >
               <span
-                class="uppercase max-w-[250px] sm:max-w-[350px] font-semibold text-xl sm:text-3xl"
-                >Casa pequeña y minimalista</span
+                class="[writing-mode:vertical-lr] uppercase font-medium scale-y-[-1] scale-x-[-1] text-xs h-full text-center"
+                >20 sep 2025</span
               >
-              <p class="text-xs leading-[20px] max-w-[300px] lg:leading-[25px]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-                obcaecati quae, provident maiores alias vel, rerum delectus,
-                quas nisi tempora nesciunt tenetur aut quo.
-              </p>
-              <button
-                class="btn-principal w-fit bg-black py-2 px-4 min-w-[150px] flex justify-between items-center mt-auto"
+              <span class="text-xl uppercase font-medium"
+                >titulo de posteo blog</span
               >
-                <span class="text-white text-xs uppercase tracking-widest"
-                  >leer mas</span
+            </div>
+          </div>
+          <div
+            class="small-blog w-full h-[250px] lg:!w-[430px] lg:ml-auto relative p-4 flex items-end lg:col-start-1 lg:row-start-2 xl:!w-[540px]"
+          >
+            <div
+              class="imagen w-full absolute top-0 left-0 h-[250px] after:inset-0 after:absolute after:bg-black/50"
+            >
+              <img
+                src="/images/blog-pag-principal/img-blog-01.webp"
+                class="h-full w-full"
+                alt=""
+              />
+            </div>
+            <div
+              class="contenido-small-blog flex items-start py-4 px-2 gap-4 bg-black w-full max-w-[350px] h-[120px] relative z-[2] text-white lg:relative lg:-left-10"
+            >
+              <span
+                class="[writing-mode:vertical-lr] uppercase font-medium scale-y-[-1] scale-x-[-1] text-xs h-full text-center"
+                >20 sep 2025</span
+              >
+              <span class="text-xl uppercase font-medium"
+                >titulo de posteo blog</span
+              >
+            </div>
+          </div>
+          <div
+            class="big-blog w-full h-[500px] lg:h-[532px] relative p-4 flex py-20 lg:col-start-2 lg:row-span-2 lg:!w-[400px] xl:!w-[500px]"
+          >
+            <div
+              class="imagen w-full absolute top-0 left-0 h-full after:inset-0 after:absolute after:bg-black/50"
+            >
+              <img
+                src="/images/blog-pag-principal/img-blog-03.webp"
+                class="h-full w-full"
+                alt=""
+              />
+            </div>
+            <div
+              class="contenido-big-blog-post flex gap-4 w-full h-full relative z-[2] xl:left-20"
+            >
+              <span
+                class="[writing-mode:vertical-lr] uppercase font-medium scale-y-[-1] scale-x-[-1] text-xs h-fit text-center text-white lg:text-lg"
+                >20 sep 2025</span
+              >
+              <div
+                class="w-full h-full !border-[12px] flex flex-col gap-4 p-4 border-black text-white lg:relative lg:min-w-[380px]"
+              >
+                <span
+                  class="uppercase max-w-[250px] sm:max-w-[350px] font-semibold text-xl sm:text-3xl"
+                  >Casa pequeña y minimalista</span
                 >
-                <span class="deco text-white">-</span>
-              </button>
+                <p
+                  class="text-xs leading-[20px] max-w-[300px] lg:leading-[25px]"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                  obcaecati quae, provident maiores alias vel, rerum delectus,
+                  quas nisi tempora nesciunt tenetur aut quo.
+                </p>
+                <a
+                  href="/blog.html"
+                  class="btn-principal w-fit bg-black py-2 px-4 min-w-[150px] flex justify-between items-center mt-auto"
+                >
+                  <span class="text-white text-xs uppercase tracking-widest"
+                    >leer mas</span
+                  >
+                  <span class="deco text-white">-</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+        <footer
+          class="flex flex-col items-end pr-8 relative after:absolute after:w-2 after:h-full after:bg-black after:right-0 after:top-0"
+        >
+          <span
+            class="main-text-footer text-4xl sm:text-5xl md:text-6xl lg:!text-[80px] font-bold uppercase text-black/10"
+            >blog</span
+          >
+          <span
+            class="sub-text-footer roboto uppercase text-sm font-medium md:text-base lg:text-lg"
+            >posts</span
+          >
+        </footer>
       </div>
-      <footer
-        class="flex flex-col items-end pr-8 relative after:absolute after:w-2 after:h-full after:bg-black after:right-0 after:top-0"
-      >
-        <span
-          class="main-text-footer text-4xl sm:text-5xl md:text-6xl lg:!text-[80px] font-bold uppercase text-black/20"
-          >blog</span
-        >
-        <span
-          class="sub-text-footer roboto uppercase text-sm font-medium md:text-base lg:text-lg"
-          >posts</span
-        >
-      </footer>
     </section>
     <section class="relative">
       <div
@@ -775,179 +947,196 @@
         </div>
       </div>
     </section>
-    <section
-      class="px-4 lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-0 pt-20 pb-10 flex flex-col gap-12 max-w-[540px] md:max-w-[720px]"
-    >
-      <header class="flex flex-col gap-8 w-full">
-        <h2
-          class="uppercase font-semibold text-3xl sm:text-4xl md:!text-[40px]"
-        >
-          testimonios
-        </h2>
-      </header>
+    <section class="section-testimonios">
       <div
-        class="swiper-testimonios overflow-hidden w-full h-[385px] sm:h-[295px] md:h-[355px] lg:h-[295px] xl:h-[295px] lg:grid lg:gap-16 lg:grid-cols-2"
+        class="main-container px-4 lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-0 pt-20 pb-10 flex flex-col gap-12 max-w-[540px] md:max-w-[720px]"
       >
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="card-testimonio w-full p-1">
-              <div
-                class="imagen w-20 h-20 relative after:absolute after:w-[50%] after:h-[50%] after:-top-1 after:bg-black after:!-left-1 after:-z-[1]"
-              >
-                <img src="/images/testimonios//img-testimonio-01.webp" alt="" />
-              </div>
-              <div
-                class="contenido-testimonio w-full p-8 px-6 flex flex-col gap-4"
-              >
-                <header class="flex flex-col">
-                  <span class="nombre uppercase font-semibold"
-                    >carla ramirez</span
-                  >
-                  <span class="posicion text-xs">Co-directora ejecutiva</span>
-                </header>
-                <div class="texto">
-                  <div class="quote">
-                    <i class="fa-solid fa-quote-left text-2xl"></i>
+        <header class="flex flex-col gap-8 w-full">
+          <h2
+            class="uppercase font-semibold text-3xl sm:text-4xl md:!text-[40px]"
+          >
+            testimonios
+          </h2>
+        </header>
+        <div
+          class="swiper-testimonios overflow-hidden w-full h-[385px] sm:h-[295px] md:h-[355px] lg:h-[295px] xl:h-[295px] lg:grid lg:gap-16 lg:grid-cols-2"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card-testimonio w-full p-1">
+                <div
+                  class="imagen w-20 h-20 relative after:absolute after:w-[50%] after:h-[50%] after:-top-1 after:bg-black after:!-left-1 after:-z-[1]"
+                >
+                  <img
+                    src="/images/testimonios//img-testimonio-01.webp"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="contenido-testimonio bg-white w-full p-8 px-6 flex flex-col gap-4"
+                >
+                  <header class="flex flex-col">
+                    <span class="nombre uppercase font-semibold"
+                      >carla ramirez</span
+                    >
+                    <span class="posicion text-xs">Co-directora ejecutiva</span>
+                  </header>
+                  <div class="texto">
+                    <div class="quote">
+                      <i class="fa-solid fa-quote-left text-2xl"></i>
+                    </div>
+                    <p class="text-xs leading-[30px]">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Cum magni omnis laborum provident sint pariatur id
+                      accusamus harum quia sunt.
+                    </p>
                   </div>
-                  <p class="text-xs leading-[30px]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                    magni omnis laborum provident sint pariatur id accusamus
-                    harum quia sunt.
-                  </p>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card-testimonio w-full p-1">
-              <div
-                class="imagen w-20 h-20 relative after:absolute after:w-[50%] after:h-[50%] after:-top-1 after:bg-black after:!-left-1 after:-z-[1]"
-              >
-                <img src="/images/testimonios/img-testimonio-02.webp" alt="" />
-              </div>
-              <div
-                class="contenido-testimonio w-full p-8 px-6 flex flex-col gap-4"
-              >
-                <header class="flex flex-col">
-                  <span class="nombre uppercase font-semibold"
-                    >carla ramirez</span
-                  >
-                  <span class="posicion text-xs">Co-directora ejecutiva</span>
-                </header>
-                <div class="texto">
-                  <div class="quote">
-                    <i class="fa-solid fa-quote-left text-2xl"></i>
+            <div class="swiper-slide">
+              <div class="card-testimonio w-full p-1">
+                <div
+                  class="imagen w-20 h-20 relative after:absolute after:w-[50%] after:h-[50%] after:-top-1 after:bg-black after:!-left-1 after:-z-[1]"
+                >
+                  <img
+                    src="/images/testimonios/img-testimonio-02.webp"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="contenido-testimonio bg-white w-full p-8 px-6 flex flex-col gap-4"
+                >
+                  <header class="flex flex-col">
+                    <span class="nombre uppercase font-semibold"
+                      >carla ramirez</span
+                    >
+                    <span class="posicion text-xs">Co-directora ejecutiva</span>
+                  </header>
+                  <div class="texto">
+                    <div class="quote">
+                      <i class="fa-solid fa-quote-left text-2xl"></i>
+                    </div>
+                    <p class="text-xs leading-[30px]">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Cum magni omnis laborum provident sint pariatur id
+                      accusamus harum quia sunt.
+                    </p>
                   </div>
-                  <p class="text-xs leading-[30px]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                    magni omnis laborum provident sint pariatur id accusamus
-                    harum quia sunt.
-                  </p>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card-testimonio w-full p-1">
-              <div
-                class="imagen w-20 h-20 relative after:absolute after:w-[50%] after:h-[50%] after:-top-1 after:bg-black after:!-left-1 after:-z-[1]"
-              >
-                <img src="/images/testimonios/img-testimonio-03.webp" alt="" />
-              </div>
-              <div
-                class="contenido-testimonio w-full p-8 px-6 flex flex-col gap-4"
-              >
-                <header class="flex flex-col">
-                  <span class="nombre uppercase font-semibold"
-                    >carla ramirez</span
-                  >
-                  <span class="posicion text-xs">Co-directora ejecutiva</span>
-                </header>
-                <div class="texto">
-                  <div class="quote">
-                    <i class="fa-solid fa-quote-left text-2xl"></i>
+            <div class="swiper-slide">
+              <div class="card-testimonio w-full p-1">
+                <div
+                  class="imagen w-20 h-20 relative after:absolute after:w-[50%] after:h-[50%] after:-top-1 after:bg-black after:!-left-1 after:-z-[1]"
+                >
+                  <img
+                    src="/images/testimonios/img-testimonio-03.webp"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="contenido-testimonio bg-white w-full p-8 px-6 flex flex-col gap-4"
+                >
+                  <header class="flex flex-col">
+                    <span class="nombre uppercase font-semibold"
+                      >carla ramirez</span
+                    >
+                    <span class="posicion text-xs">Co-directora ejecutiva</span>
+                  </header>
+                  <div class="texto">
+                    <div class="quote">
+                      <i class="fa-solid fa-quote-left text-2xl"></i>
+                    </div>
+                    <p class="text-xs leading-[30px]">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Cum magni omnis laborum provident sint pariatur id
+                      accusamus harum quia sunt.
+                    </p>
                   </div>
-                  <p class="text-xs leading-[30px]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                    magni omnis laborum provident sint pariatur id accusamus
-                    harum quia sunt.
-                  </p>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card-testimonio w-full p-1">
-              <div
-                class="imagen w-20 h-20 relative after:absolute after:w-[50%] after:h-[50%] after:-top-1 after:bg-black after:!-left-1 after:-z-[1]"
-              >
-                <img src="/images/testimonios/img-testimonio-04.webp" alt="" />
-              </div>
-              <div
-                class="contenido-testimonio w-full p-8 px-6 flex flex-col gap-4"
-              >
-                <header class="flex flex-col">
-                  <span class="nombre uppercase font-semibold"
-                    >carla ramirez</span
-                  >
-                  <span class="posicion text-xs">Co-directora ejecutiva</span>
-                </header>
-                <div class="texto">
-                  <div class="quote">
-                    <i class="fa-solid fa-quote-left text-2xl"></i>
+            <div class="swiper-slide">
+              <div class="card-testimonio w-full p-1">
+                <div
+                  class="imagen w-20 h-20 relative after:absolute after:w-[50%] after:h-[50%] after:-top-1 after:bg-black after:!-left-1 after:-z-[1]"
+                >
+                  <img
+                    src="/images/testimonios/img-testimonio-04.webp"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="contenido-testimonio bg-white w-full p-8 px-6 flex flex-col gap-4"
+                >
+                  <header class="flex flex-col">
+                    <span class="nombre uppercase font-semibold"
+                      >carla ramirez</span
+                    >
+                    <span class="posicion text-xs">Co-directora ejecutiva</span>
+                  </header>
+                  <div class="texto">
+                    <div class="quote">
+                      <i class="fa-solid fa-quote-left text-2xl"></i>
+                    </div>
+                    <p class="text-xs leading-[30px]">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Cum magni omnis laborum provident sint pariatur id
+                      accusamus harum quia sunt.
+                    </p>
                   </div>
-                  <p class="text-xs leading-[30px]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                    magni omnis laborum provident sint pariatur id accusamus
-                    harum quia sunt.
-                  </p>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card-testimonio w-full p-1">
-              <div
-                class="imagen w-20 h-20 relative after:absolute after:w-[50%] after:h-[50%] after:-top-1 after:bg-black after:!-left-1 after:-z-[1]"
-              >
-                <img src="/images/testimonios/img-testimonio-05.webp" alt="" />
-              </div>
-              <div
-                class="contenido-testimonio w-full p-8 px-6 flex flex-col gap-4"
-              >
-                <header class="flex flex-col">
-                  <span class="nombre uppercase font-semibold"
-                    >carla ramirez</span
-                  >
-                  <span class="posicion text-xs">Co-directora ejecutiva</span>
-                </header>
-                <div class="texto">
-                  <div class="quote">
-                    <i class="fa-solid fa-quote-left text-2xl"></i>
+            <div class="swiper-slide">
+              <div class="card-testimonio w-full p-1">
+                <div
+                  class="imagen w-20 h-20 relative after:absolute after:w-[50%] after:h-[50%] after:-top-1 after:bg-black after:!-left-1 after:-z-[1]"
+                >
+                  <img
+                    src="/images/testimonios/img-testimonio-05.webp"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="contenido-testimonio bg-white w-full p-8 px-6 flex flex-col gap-4"
+                >
+                  <header class="flex flex-col">
+                    <span class="nombre uppercase font-semibold"
+                      >carla ramirez</span
+                    >
+                    <span class="posicion text-xs">Co-directora ejecutiva</span>
+                  </header>
+                  <div class="texto">
+                    <div class="quote">
+                      <i class="fa-solid fa-quote-left text-2xl"></i>
+                    </div>
+                    <p class="text-xs leading-[30px]">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Cum magni omnis laborum provident sint pariatur id
+                      accusamus harum quia sunt.
+                    </p>
                   </div>
-                  <p class="text-xs leading-[30px]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                    magni omnis laborum provident sint pariatur id accusamus
-                    harum quia sunt.
-                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <footer
+          class="flex flex-col items-end pr-8 relative after:absolute after:w-2 after:h-full after:bg-black after:right-0 after:top-0 sm:col-span-2 lg:mt-12"
+        >
+          <span
+            class="main-text-footer text-[42px] md:text-6xl lg:!text-[80px] font-bold uppercase text-black/10"
+            >clientes</span
+          >
+          <span
+            class="sub-text-footer roboto uppercase text-sm font-medium md:text-base lg:text-lg"
+            >dicen</span
+          >
+        </footer>
       </div>
-      <footer
-        class="flex flex-col items-end pr-8 relative after:absolute after:w-2 after:h-full after:bg-black after:right-0 after:top-0 sm:col-span-2 lg:mt-12"
-      >
-        <span
-          class="main-text-footer text-[42px] md:text-6xl lg:!text-[80px] font-bold uppercase text-black/20"
-          >clientes</span
-        >
-        <span
-          class="sub-text-footer roboto uppercase text-sm font-medium md:text-base lg:text-lg"
-          >dicen</span
-        >
-      </footer>
     </section>
     <section class="bg-black">
       <div
@@ -1011,21 +1200,21 @@
       </div>
       <ul class="filtros flex flex-wrap items-center justify-center gap-x-2">
         <li
-          class="pr-2 py-1 relative after:absolute after:top-[25%] after:-right-1 after:w-[2px] after:h-[50%] after:bg-black/30 after:-skew-12"
+          class="pr-2 py-1 cursor-pointer relative after:absolute after:top-[25%] after:-right-1 after:w-[2px] after:h-[50%] after:bg-black/30 after:-skew-12"
         >
           <span class="capitalize text-xs xl:text-sm"
-            >terminos & condiciones</span
+            >términos & condiciones</span
           >
         </li>
         <li
-          class="px-2 py-1 relative after:absolute after:top-[25%] after:-right-1 after:w-[2px] after:h-[50%] after:bg-black/30 after:-skew-12"
+          class="px-2 py-1 cursor-pointer relative after:absolute after:top-[25%] after:-right-1 after:w-[2px] after:h-[50%] after:bg-black/30 after:-skew-12"
         >
           <span class="capitalize text-xs xl:text-sm"
             >politica de privacidad</span
           >
         </li>
-        <li class="px-2 py-1">
-          <span class="capitalize text-xs xl:text-sm">contactanos</span>
+        <li class="px-2 py-1 cursor-pointer">
+          <span class="capitalize text-xs xl:text-sm">contáctanos</span>
         </li>
       </ul>
     </footer>
