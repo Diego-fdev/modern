@@ -78,3 +78,44 @@ const swiperClientes = new Swiper(".swiper-clientes", {
     },
   },
 });
+
+const modalNavMobile = document.querySelector(".modal-nav-mobile");
+const btnCloseNavMobile = document.querySelector(".btn-close-nav-modal");
+const btnOpenNavMobile = document.querySelector(".btn-menu-mobile");
+const linksNavMobile = document.querySelectorAll(".link-modal-mobile");
+const body = document.querySelector("body");
+
+const toggleModalMobile = (accion) => {
+  if (accion === "abrir") {
+    modalNavMobile.classList.remove(
+      "opacity-0",
+      "invisible",
+      "pointer-events-none"
+    );
+    modalNavMobile.classList.add("opacity-100", "visible", "translate-y-10");
+    body.classList.add("overflow-hidden");
+  } else {
+    modalNavMobile.classList.remove("opacity-100", "visible", "translate-y-10");
+    body.classList.remove("overflow-hidden");
+    modalNavMobile.classList.add(
+      "opacity-0",
+      "invisible",
+      "pointer-events-none",
+      "translate-y-0"
+    );
+  }
+};
+
+btnOpenNavMobile.addEventListener("click", () => {
+  toggleModalMobile("abrir");
+});
+
+btnCloseNavMobile.addEventListener("click", () => {
+  toggleModalMobile("cerrar");
+});
+
+linksNavMobile.forEach((link) =>
+  link.addEventListener("click", () => {
+    toggleModalMobile("cerrar");
+  })
+);
