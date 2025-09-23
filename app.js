@@ -119,3 +119,40 @@ linksNavMobile.forEach((link) =>
     toggleModalMobile("cerrar");
   })
 );
+
+const botonesFiltros = document.querySelectorAll(".filtro-proyectos");
+const itemsProyectos = document.querySelectorAll(".item-proyecto");
+
+const handleItemsFiltered = (filtro) => {
+  itemsProyectos.forEach((item) => {
+    if (filtro === "todos") {
+      item.classList.remove("hidden");
+    } else if (item.dataset.type !== filtro) {
+      item.classList.add("hidden");
+    } else {
+      item.classList.remove("hidden");
+    }
+  });
+};
+
+const changeButtonColor = (clickedButton) => {
+  botonesFiltros.forEach((botonForEach) => {
+    if (botonForEach.dataset.filter === clickedButton.dataset.filter) {
+      clickedButton.classList.toggle("text-[#2749ff]");
+    } else {
+      botonForEach.classList.remove("text-[#2749ff]");
+    }
+  });
+};
+
+const handleClickFilters = (boton) => {
+  const filtro = boton.dataset.filter;
+  changeButtonColor(boton);
+  itemsFiltrados = handleItemsFiltered(filtro);
+};
+
+botonesFiltros.forEach((boton) => {
+  boton.addEventListener("click", () => {
+    handleClickFilters(boton);
+  });
+});
